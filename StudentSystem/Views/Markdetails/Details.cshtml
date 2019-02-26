@@ -1,0 +1,66 @@
+﻿@model StudentSystem.Markdetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Markdetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ObtainMark)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObtainMark)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutOf)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutOf)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Percentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Percentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassDetail.ClassName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassDetail.ClassName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.FirstName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
